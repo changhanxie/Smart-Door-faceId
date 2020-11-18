@@ -1,0 +1,14 @@
+aws rekognition create-stream-processor --cli-input-json file://awsstream.json
+
+aws rekognition create-collection --collection-id SD-rekognition-collection --region us-east-1
+
+aws rekognition list-faces --collection-id SD-rekognition-collection
+
+aws rekognition delete-faces --collection-id SD-rekognition-collection --face-ids 9d6385e6-fab9-46dd-8c08-fb6d655cc16a --region us-east-1
+
+aws rekognition start-stream-processor --name FacialRecognitionStreamProcessor --region us-east-1
+
+aws rekognition stop-stream-processor --name FacialRecognitionStreamProcessor --region us-east-1
+
+aws rekognition describe-stream-processor --name FacialRecognitionStreamProcessor --region us-east-1
+

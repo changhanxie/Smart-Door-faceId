@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://code.jquery.com/jquery-1.11.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!------ Include the above in your HEAD tag ---------->
+
+    <link rel="stylesheet" type="text/css" href="sd-wf1.css">
+    <script type="text/javascript" src="sd-wf1.js" ></script>
+
+    <title></title>
+</head>
+<body>
+    <div class="container">
+        <div class="login-container">
+            <div id="output"></div>
+            <div class="avatar">
+                <img id="avatarimg" src="https://www.toptal.com/designers/subtlepatterns/patterns/moroccan-flower-dark.png">
+            </div>
+            <div class="form-box">
+                <form action="" method="post">
+                    <!-- <div class="input-field col s12">
+                        <input id="email" type="email" class="validate">
+                        <label for="email">Email</label>
+                    </div> -->
+                    <div class="input-field">
+                        <input id="faceid" name="faceid" type="text" value="balabala"  disabled>
+                        <label for="faceid">Generated image-id</label>
+                    </div>
+                    <div class="input-field">
+                        <input id="username" name="username" type="text">
+                        <label for="username">User name</label>
+                    </div>
+                    <div class="input-field">
+                        <input id="phonenumber" name="phonenumber" type="text">
+                        <label for="phonenumber">Phone number</label>
+                    </div>
+                    <button class="waves-effect waves-light btn"  type="submit">submit</button>
+                    <!-- <a class="waves-effect waves-light btn" onclick="dumblog()" >Dumb Button</a>  -->
+                </form>
+            </div>
+        </div>
+    </div>
+
+  <!-- Modal Structure -->
+  <div id="modal1" class="modal flat-container">
+      <!-- header -->
+    <div class="col s12 container">
+        <h5>Will you grant access to below visitor?</h4>
+    </div>
+    <div class="row">
+        <!-- image container -->
+        <div class="col s6">
+            <div class="container">
+                <img id="modalimg" src="https://www.toptal.com/designers/subtlepatterns/patterns/moroccan-flower-dark.png">
+            </div>
+        </div>
+        <hr>
+        <br>
+        <!-- button set -->
+        <div class="col s6">
+            <div class="container" id="button-container">
+                <a class="modal-close waves-effect waves-green light-green btn">Yes</a>
+                <a class="waves-effect waves-red deep-orange btn" onclick="blockSuccess()">No</a>
+            </div>
+        </div>
+      </div>
+
+  </div>
+</body>
+</html>
+
