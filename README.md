@@ -8,4 +8,4 @@ approving a requset from owner
 ## sd-wf2.py
 enter otp
 
-![Alt text](images/request.png?raw=true "Title")
+![Unknown visitor request](request.png)
